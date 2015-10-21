@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>Home task</title>
+    </head>
+    <body>
+    	<p>Home task</p>
+    	<ul id="list">
+    	</ul>
+    	<script>
+        var arr=[];
+    		for (var i=1; i<=100; i++){
+  				 arr.push('<li>Text</li>');
+        }
+        arr.join('\n');
+        document.getElementById("list").insertAdjacentHTML("AfterBegin", arr); 
+        </script>    
+    </body>
+</html>
