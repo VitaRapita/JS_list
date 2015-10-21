@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>Home task</title>
+    </head>
+    <body>
+    	<p>Home task</p>
+    	<ul id="list">
+    	</ul>
+    	<script>
+    		for (var i=1; i<=100; i++){
+  				var newLi = document.createElement('li');
+  				var newLi_1=document.createTextNode('Text_'+i);
+          newLi.appendChild(newLi_1);
+          document.getElementById("list").appendChild(newLi); 
+        }
+        </script>    
+    </body>
+</html>
