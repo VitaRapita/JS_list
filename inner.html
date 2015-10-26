@@ -10,12 +10,14 @@
     		<li>Text_1</li>
     	</ul>
     	<script>
+        var list = document.getElementById("list");
     		for (var i=2; i<=100; i++){
   				var newLi = document.createElement('li');
-  				newLi.innerHTML = 'Text_'+[i];
+  				newLi.innerHTML += 'Text_'+[i];
+                list.appendChild(newLi);
+            }
 
-  				list.appendChild(newLi);
- 			}
+
 		  </script>    
     </body>
 </html>
